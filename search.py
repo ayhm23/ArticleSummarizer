@@ -302,6 +302,9 @@ def main():
         return None, None, None, None
 
     wordpressfunctions.post_with_image(title, summary, image_path, keywords)
+    id = wordpressfunctions.get_post_id_by_title(title)
+    sleep(2400)
+    wordpressfunctions.delete_post(id)
 
     
 if __name__ == "__main__":
