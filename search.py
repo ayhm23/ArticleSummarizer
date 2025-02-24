@@ -6,7 +6,7 @@ import wordpressfunctions
 from concurrent.futures import ThreadPoolExecutor
 from form import get_record
 
-
+import time
 
 import re
 import torch
